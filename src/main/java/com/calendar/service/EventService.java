@@ -1,4 +1,4 @@
 package com.calendar.service;
 
-public class FirstService {
+public class EventService {
 }
