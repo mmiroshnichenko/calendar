@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
-public class OracleDbConfig {
+public class DbConfig {
     @Value("${spring.datasource.hibernate.dialect}")
     private String dialect;
 
@@ -35,7 +35,6 @@ public class OracleDbConfig {
 
         LocalContainerEntityManagerFactoryBean emf = builder.dataSource(dataSource)
                 .packages("com.calendar.model")
-                .persistenceUnit("oracle")
                 .build();
 
         emf.setJpaProperties(properties);
