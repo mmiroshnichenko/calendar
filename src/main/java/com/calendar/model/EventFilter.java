@@ -9,7 +9,7 @@ import java.util.Date;
 @Setter
 public class EventFilter {
     private String header;
-    private Date startTime;
-    private Date endTime;
+    private String startTime;
+    private String endTime;
     private String description;
 }

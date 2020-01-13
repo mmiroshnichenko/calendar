@@ -1,0 +1,3 @@
+2020-01-13 15:44:42,629 ERROR c.c.e.h.ResponseStatusHandler [http-nio-8080-exec-3] Error: end time of the event cannot be before start time
+2020-01-13 15:57:21,172 ERROR c.c.e.h.ResponseStatusHandler [http-nio-8080-exec-8] Error: event(id: 2) was not found
+2020-01-13 15:59:36,827 ERROR c.c.e.h.ResponseStatusHandler [http-nio-8080-exec-3] Error: event(id: 4) was not found
