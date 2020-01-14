@@ -30,4 +30,24 @@ public class Event {
 
     @Column(name = "DESCRIPTION")
     private String description;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Event event = (Event) o;
+
+        if (!id.equals(event.id)) return false;
+        if (!header.equals(event.header)) return false;
+        return description.equals(event.description);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id.hashCode();
+        result = 31 * result + header.hashCode();
+        result = 31 * result + description.hashCode();
+        return result;
+    }
 }
